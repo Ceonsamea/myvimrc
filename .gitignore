@@ -4,6 +4,7 @@
 # But not these files...
 !.gitignore
 !init.vim
+!.vimrc
 
 # ...even if they are in subdirectories
 !*/
