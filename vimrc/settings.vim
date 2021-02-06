@@ -13,7 +13,7 @@ set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
 
-set colorcolumn=80
+set colorcolumn=89
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 colorscheme gruvbox
