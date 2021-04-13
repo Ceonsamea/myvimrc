@@ -9,5 +9,6 @@
 # ...even if they are in subdirectories
 !*/
 !vimrc/*
+!autoload/*
 
 plugged/
