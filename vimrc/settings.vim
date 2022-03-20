@@ -1,28 +1,30 @@
 syntax on
+" set exrc
 set hidden " Required to keep multiple buffers open multiple buffers
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+
+" set relativenumber " disabled due to causing lag nvim 0.4.4
 set nu
+" set nohlsearch
+set incsearch
 set nowrap
-set smartcase
+
+" Try to fix some lag problems when using relativenumber
+" set lazyredraw
+" set ttyfast
+
+" Great especially for undotree
 set noswapfile
 set nobackup
 set undodir=~/.config/nvim/undodir
 set undofile
-set incsearch
 
 set colorcolumn=89
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 colorscheme gruvbox
 set background=dark
-
-"---plugin-dependant settings
-"Ale settings
-let g:ale_linters = {'python': ['flake8']}
-let g:ale_fixers = {'*': [], 'python': ['black']}
-let g:ale_fix_on_save = 1
-" Todo consider adding linters: psydocstyle, bandit, myptp
-" Todo consider adding fixers: black, isort
+"highlight Search cterm=NONE ctermfg=black ctermbg=blue

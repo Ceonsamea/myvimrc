@@ -1,17 +1,20 @@
 call plug#begin("~/.vim/plugged")
 
+" Color Schemes
 Plug 'morhetz/gruvbox'
+
+" Functionality
+Plug 'mbbill/undotree'
 
 " For real-time async linting
 Plug 'dense-analysis/ale'
 
-" For? Linting? Am I using this? Maybe syntax highlighting?
-"Plug 'sheerun/vim-polyglot'
-
+" Syntax highlighting
+Plug 'sheerun/vim-polyglot'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'leafgarland/typescript-vim'
-"Plug 'mbbill/undotree'
-
+Plug 'alexlafroscia/postcss-syntax.vim'
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 "---plugin-dependant settings
