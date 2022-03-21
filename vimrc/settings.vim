@@ -16,6 +16,9 @@ set nowrap
 " set lazyredraw
 " set ttyfast
 
+" Folding
+set foldmethod=indent
+
 " Great especially for undotree
 set noswapfile
 set nobackup
