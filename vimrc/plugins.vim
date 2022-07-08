@@ -10,7 +10,7 @@ Plug 'mbbill/undotree'
 " Plug 'dense-analysis/ale'
 
 " Syntax highlighting
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'leafgarland/typescript-vim'
 Plug 'alexlafroscia/postcss-syntax.vim'
