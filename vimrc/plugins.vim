@@ -15,6 +15,7 @@ Plug 'mbbill/undotree'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'leafgarland/typescript-vim'
 Plug 'alexlafroscia/postcss-syntax.vim'
+Plug 'mtdl9/vim-log-highlighting' " for .log files
 
 " Intellisense
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
