@@ -2,6 +2,7 @@ call plug#begin("~/.vim/plugged")
 
 " Color Schemes
 Plug 'morhetz/gruvbox'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " Functionality
 Plug 'mbbill/undotree'
@@ -30,13 +31,4 @@ call plug#end()
 " ---
 " Black autoformat on save
 autocmd BufWritePre *.py execute ':Black'
-
-"Ale settings <- Removed, using Coc instead
-" let g:ale_linters = {'python': ['flake8']}
-" let g:ale_fixers = {'*': [], 'python': ['black']}
-" let g:ale_fix_on_save = 1
-
-" neoclide/coc.nvim settings/shortcuts
-"" Goto definition
-" nmap <silent> gd <Plug>(coc-definition)
 

@@ -25,9 +25,23 @@ set nobackup
 set undodir=~/.config/nvim/undodir
 set undofile
 
+set cursorline " Highlight the current line
+set cursorlineopt=number " but only the number, not the row
 set colorcolumn=89
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+" --
+" -- Color Scheme --
+"  --
+
 colorscheme gruvbox
+
+" let g:tokyonight_style = "night"
+" colorscheme tokyonight
 set background=dark
 "highlight Search cterm=NONE ctermfg=black ctermbg=blue
+
+" Explicitly set nvim to use this virtualenv so that pynvim doesn't
+" doesn't have to be installed individually in each env
+" https://neovim.io/doc/user/provider.html
+let g:python3_host_prog = '/home/dayne/.pyenv/versions/py3nvim/bin/python'

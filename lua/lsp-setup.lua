@@ -96,6 +96,11 @@ require('lspconfig')['jsonls'].setup{
     flags = lsp_flags,
 }
 
+require('lspconfig')['svelte'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
 lspconfig.sumneko_lua.setup({})
 
 -- Show line diagnostics automatically in hover window
